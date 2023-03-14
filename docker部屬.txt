@@ -1,0 +1,10 @@
+Dockerfile存在專案根目錄
+
+在Dockerfile中增加VOLUME /app
+
+在根目錄使用cmd 執行docker run -it -p 3000:3000 -v E:\code\react\react-project:/app react-project
+這是用來運行容器的(冒號前為瀏覽器運行的port,後為容器內映像檔中react當初設定的port)
+
+再開啟一個cmd
+執行npm start -- --watch-poll
+這個是用來持續監聽你本機端的專案目錄，並將修改即時同步到容器內。
