@@ -14,6 +14,7 @@ function App() {
           <List name="item4" price={400} />
           <List name="item5" price={500} />
           <List />
+          <List name="item6" price={600} />
         </ul>
       </div>
       {/* <header className="App-header">
